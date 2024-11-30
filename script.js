@@ -207,7 +207,8 @@ const quizData = [
     }
   
     const { question, options } = quizData[currentStep];
-    stepper.textContent = Question ${currentStep + 1} / ${quizData.length};
+    stepper.textContent = `Question ${currentStep + 1} / ${quizData.length}`;
+
     questionEl.textContent = question;
     optionsEl.innerHTML = "";
   
