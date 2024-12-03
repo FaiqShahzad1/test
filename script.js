@@ -1,191 +1,180 @@
 const quizData = [
-    {
-      question: "How do you make a flex container in CSS?",
-      options: ["flex: container;", "display: flex;", "flex-box: display;"],
-      rightAnswer: "display: flex;",
-    },
-    {
-      question: "How do you create a button in Bootstrap?",
-      options: [
-        "<button class='btn'>",
-        "<button class='button'>",
-        "<button class='btn-style'>",
-      ],
-      rightAnswer: "<button class='btn'>",
-    },
-    {
-      question:
-        "Which property is used to create space between the border and the content of an element?",
-      options: ["padding", "margin", "spacing"],
-      rightAnswer: "padding",
-    },
-    {
-      question: "Which attribute is used to open a link in a new tab?",
-      options: ["target='_new'", "target='_blank'", "target='_tab'"],
-      rightAnswer: "target='_blank'",
-    },
-    {
-      question: "What is the difference between <section> and <div>?",
-      options: [
-        "<div> is semantic; <section> is not",
-        "<section> is semantic; <div> is not",
-        "<section> can only contain <div> elements",
-      ],
-      rightAnswer: "<section> is semantic; <div> is not",
-    },
-    {
-      question:
-        "Which CSS property is used to control the stacking order of elements?",
-      options: ["z-index", "order", "stack"],
-      rightAnswer: "z-index",
-    },
-    {
-      question: "How do you center an element vertically in CSS using Flexbox?",
-      options: [
-        "vertical-align: middle;",
-        "margin: auto;",
-        "align-items: center; justify-content: center;",
-      ],
-      rightAnswer: "align-items: center; justify-content: center;",
-    },
-    {
-      question: "What does the 'position: fixed;' property do?",
-      options: [
-        "Positions an element relative to its container",
-        "Fixes an element relative to the viewport",
-        "Makes an element float above all other elements",
-      ],
-      rightAnswer: "Fixes an element relative to the viewport",
-    },
-    {
-      question: "Which property is used to create rounded corners?",
-      options: ["corner-radius", "border-radius", "round-corner"],
-      rightAnswer: "border-radius",
-    },
-    {
-      question: "How do you create a responsive image in CSS?",
-      options: [
-        "position: relative; width: auto;",
-        "max-width: 100%; height: auto;",
-        "width: 100%; height: fixed;",
-      ],
-      rightAnswer: "max-width: 100%; height: auto;",
-    },
-    {
-      question: "What is the default positioning of an HTML element in CSS?",
-      options: ["static", "relative", "absolute"],
-      rightAnswer: "static",
-    },
-    {
-      question: "What does the 'overflow' property control?",
-      options: [
-        "Alignment of child elements",
-        "Content visibility outside a container",
-        "Text wrapping within an element",
-      ],
-      rightAnswer: "Content visibility outside a container",
-    },
-    {
-      question: "How do you apply a CSS rule only for screens wider than 768px?",
-      options: [
-        "@media (max-width: 768px)",
-        "@media (min-width: 768px)",
-        "@screen (min-width: 768px)",
-      ],
-      rightAnswer: "@media (min-width: 768px)",
-    },
-    {
-      question: "What is the purpose of the <head> tag in HTML?",
-      options: [
-        "Displays the main content of the page",
-        "Contains metadata and links to external resources",
-        "Adds a header to the page",
-      ],
-      rightAnswer: "Contains metadata and links to external resources",
-    },
-    {
-      question:
-        "How do you make an element's width match the parent's width in CSS?",
-      options: ["width: 100%;", "width: auto;", "width: inherit;"],
-      rightAnswer: "width: 100%;",
-    },
-    {
-      question: "What is the purpose of the 'float' property in CSS?",
-      options: [
-        "Centers an element within its container",
-        "Adds a shadow effect to an element",
-        "Positions an element to the left or right within its container",
-      ],
-      rightAnswer:
-        "Positions an element to the left or right within its container",
-    },
-    {
-      question: "Which CSS property sets the space between table cells?",
-      options: ["border-spacing", "cell-padding", "cell-spacing"],
-      rightAnswer: "border-spacing",
-    },
-    {
-      question:
-        "What is the difference between 'visibility: hidden;' and 'display: none;'?",
-      options: [
-        "'visibility: hidden;' removes the element's space; 'display: none;' keeps it",
-        "'visibility: hidden;' keeps the element's space; 'display: none;' removes it",
-        "'visibility: hidden;' makes the element transparent; 'display: none;' hides it completely",
-      ],
-      rightAnswer:
-        "'visibility: hidden;' keeps the element's space; 'display: none;' removes it",
-    },
-    {
-      question:
-        "Which class is used to align items horizontally in the center of a Bootstrap grid?",
-      options: [
-        "justify-content-start",
-        "justify-content-center",
-        "align-items-center",
-      ],
-      rightAnswer: "justify-content-center",
-    },
-    {
-      question: "How do you center a block element horizontally in CSS?",
-      options: ["margin: auto;", "text-align: center;", "display: center;"],
-      rightAnswer: "margin: auto;",
-    },
-    {
-      question: "How can you create a Bootstrap modal?",
-      options: [
-        "<div class='modal'>",
-        "<div class='modal-window'>",
-        "<div class='bootstrap-modal'>",
-      ],
-      rightAnswer: "<div class='modal'>",
-    },
-    {
-      question:
-        "What is the main class used to create a responsive grid in Bootstrap?",
-      options: ["grid", "container", "row"],
-      rightAnswer: "container",
-    },
-    {
-      question: "Which CSS property is used to add shadows to an element?",
-      options: ["text-shadow", "box-shadow", "shadow"],
-      rightAnswer: "box-shadow",
-    },
-    {
-      question: "Which property controls the space between the lines of text?",
-      options: ["letter-spacing", "word-spacing", "line-height"],
-      rightAnswer: "line-height",
-    },
-    {
-      question: "What does 'display: inline-block;' do in CSS?",
-      options: [
-        "Makes an element invisible on the page",
-        "Allows an element to be displayed inline, but with block-level styling",
-        "Makes an element behave like a block-level element",
-      ],
-      rightAnswer:
-        "Allows an element to be displayed inline, but with block-level styling",
-    },
-  ];
+  {
+    question:
+      "Which Bootstrap class is used to create a button with rounded corners?",
+    options: ["btn-rounded", "btn-circle", "btn-pill"],
+    rightAnswer: "btn-pill",
+  },
+  {
+    question: "Which HTML5 tag is used to define navigation links?",
+    options: ["<nav>", "<header>", "<footer>"],
+    rightAnswer: "<nav>",
+  },
+  {
+    question:
+      "Which attribute is used to set the alternative text for an image?",
+    options: ["title", "alt", "src"],
+    rightAnswer: "alt",
+  },
+  {
+    question: "Which CSS property is used to change the text color?",
+    options: ["font-color", "text-color", "color"],
+    rightAnswer: "color",
+  },
+  {
+    question:
+      "Which CSS property is used to set the background color of an element?",
+    options: ["background-color", "color", "background"],
+    rightAnswer: "background-color",
+  },
+  {
+    question:
+      "Which pseudo-class is used to style an element when the mouse hovers over it?",
+    options: [":hover", ":active", ":focus"],
+    rightAnswer: ":hover",
+  },
+  {
+    question:
+      "Which CSS property is used to control the transparency of an element?",
+    options: ["visibility", "opacity", "filter"],
+    rightAnswer: "opacity",
+  },
+  {
+    question: "What does the 'z-index' property in CSS control?",
+    options: [
+      "The size of an element",
+      "The stacking order of elements",
+      "The visibility of an element",
+    ],
+    rightAnswer: "The stacking order of elements",
+  },
+  {
+    question: "What does 'position: absolute;' do in CSS?",
+    options: [
+      "Positions the element relative to its parent",
+      "Positions the element relative to the nearest positioned ancestor",
+      "Centers the element on the page",
+    ],
+    rightAnswer:
+      "Positions the element relative to the nearest positioned ancestor",
+  },
+  {
+    question: "How do you hide an element but keep its space in the document?",
+    options: ["display: none;", "visibility: hidden;", "opacity: 0;"],
+    rightAnswer: "visibility: hidden;",
+  },
+  {
+    question: "Which HTML tag is used to create a hyperlink?",
+    options: ["<a>", "<link>", "<href>"],
+    rightAnswer: "<a>",
+  },
+  {
+    question: "How do you align text to the center in CSS?",
+    options: [
+      "text-align: center;",
+      "align-text: center;",
+      "justify-content: center;",
+    ],
+    rightAnswer: "text-align: center;",
+  },
+  {
+    question:
+      "Which media query is used to apply styles for devices with a maximum width of 600px?",
+    options: [
+      "@media (min-width: 600px)",
+      "@media (max-width: 600px)",
+      "@media (width: 600px)",
+    ],
+    rightAnswer: "@media (max-width: 600px)",
+  },
+  {
+    question: "What does the 'container' class in Bootstrap do?",
+    options: [
+      "Creates a responsive fixed-width container",
+      "Adds padding to all elements",
+      "Centers all text on the page",
+    ],
+    rightAnswer: "Creates a responsive fixed-width container",
+  },
+  {
+    question: "How do you center a block element using Flexbox?",
+    options: [
+      "align-items: center;",
+      "justify-content: center;",
+      "align-items: center; justify-content: center;",
+    ],
+    rightAnswer: "align-items: center; justify-content: center;",
+  },
+  {
+    question:
+      "How do you make an element stick to the top of the page in Bootstrap?",
+    options: ["position-fixed", "sticky-top", "top-fixed"],
+    rightAnswer: "sticky-top",
+  },
+  {
+    question:
+      "Which CSS property is used to create a shadow around an element?",
+    options: ["box-shadow", "border-shadow", "shadow"],
+    rightAnswer: "box-shadow",
+  },
+  {
+    question: "What does 'flex-wrap: wrap;' do in a flex container?",
+    options: [
+      "Prevents child elements from wrapping",
+      "Allows child elements to wrap onto the next line",
+      "Centers the child elements",
+    ],
+    rightAnswer: "Allows child elements to wrap onto the next line",
+  },
+  {
+    question: "What is the purpose of the <footer> tag in HTML?",
+    options: [
+      "To define navigation links",
+      "To group footer content such as copyright and links",
+      "To add a heading at the bottom of the page",
+    ],
+    rightAnswer: "To group footer content such as copyright and links",
+  },
+  {
+    question: "Which property is used to add space inside an element?",
+    options: ["padding", "margin", "border"],
+    rightAnswer: "padding",
+  },
+  {
+    question:
+      "How do you apply styles to screens larger than 1024px using media queries?",
+    options: [
+      "@media (min-width: 1024px)",
+      "@media (max-width: 1024px)",
+      "@media (screen-width: 1024px)",
+    ],
+    rightAnswer: "@media (min-width: 1024px)",
+  },
+  {
+    question: "What is the default display value of the <div> element?",
+    options: ["inline", "block", "inline-block"],
+    rightAnswer: "block",
+  },
+  {
+    question: "Which class is used to hide an element in Bootstrap?",
+    options: [".hide", ".d-none", ".invisible"],
+    rightAnswer: ".d-none",
+  },
+  {
+    question: "Which media query is used to target small screens?",
+    options: [
+      "@media (max-width: 576px)",
+      "@media (min-width: 576px)",
+      "@media (small-screens)",
+    ],
+    rightAnswer: "@media (max-width: 576px)",
+  },
+  {
+    question: "What is the default positioning of an HTML element in CSS?",
+    options: ["static", "relative", "absolute"],
+    rightAnswer: "static",
+  },
+];
   
   let currentStep = parseInt(localStorage.getItem("currentStep")) || 0;
   let score = parseInt(localStorage.getItem("score")) || 0;
